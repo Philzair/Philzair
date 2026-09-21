@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="540" viewBox="0 0 1120 540" role="img" aria-labelledby="title desc">
+  <title id="title">小学四则运算程序设计流程图</title>
+  <desc id="desc">命令行参数处理分别进入题目生成流程和答案批改流程</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#52606d"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#102a43" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1120" height="540" fill="#f7f9fc"/>
+  <text x="560" y="46" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#172b4d">小学四则运算程序设计流程</text>
+  <text x="560" y="74" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#627d98">生成题目与批改答案共用精确分数运算和文件输出模块</text>
+
+  <g fill="none" stroke="#52606d" stroke-width="2.2" marker-end="url(#arrow)">
+    <path d="M560 153 L560 193"/>
+    <path d="M475 238 L370 238 L370 282"/>
+    <path d="M645 238 L750 238 L750 282"/>
+    <path d="M370 346 L370 382"/>
+    <path d="M750 346 L750 382"/>
+    <path d="M370 446 L370 482"/>
+    <path d="M750 446 L750 482"/>
+  </g>
+
+  <g filter="url(#shadow)" font-family="Microsoft YaHei, sans-serif" text-anchor="middle">
+    <rect x="430" y="98" width="260" height="55" rx="7" fill="#ffffff" stroke="#2b6cb0" stroke-width="2"/>
+    <text x="560" y="132" font-size="17" font-weight="700" fill="#1a365d">Myapp.py 命令行参数处理</text>
+
+    <path d="M560 193 L645 238 L560 283 L475 238 Z" fill="#fffaf0" stroke="#b7791f" stroke-width="2"/>
+    <text x="560" y="234" font-size="16" font-weight="700" fill="#744210">运行模式</text>
+    <text x="560" y="255" font-size="13" fill="#744210">生成 / 批改</text>
+
+    <rect x="230" y="282" width="280" height="64" rx="7" fill="#f0fff4" stroke="#2f855a" stroke-width="2"/>
+    <text x="370" y="310" font-size="17" font-weight="700" fill="#22543d">ExerciseGenerator</text>
+    <text x="370" y="333" font-size="13" fill="#276749">生成 1 至 3 个运算符的表达式</text>
+
+    <rect x="610" y="282" width="280" height="64" rx="7" fill="#ebf8ff" stroke="#3182ce" stroke-width="2"/>
+    <text x="750" y="310" font-size="17" font-weight="700" fill="#2a4365">ExpressionParser</text>
+    <text x="750" y="333" font-size="13" fill="#2c5282">解析题目并计算精确答案</text>
+
+    <rect x="230" y="382" width="280" height="64" rx="7" fill="#ffffff" stroke="#2f855a" stroke-width="2"/>
+    <text x="370" y="410" font-size="17" font-weight="700" fill="#22543d">Expression 表达式树</text>
+    <text x="370" y="433" font-size="13" fill="#276749">约束检查、精确求值、规范键判重</text>
+
+    <rect x="610" y="382" width="280" height="64" rx="7" fill="#ffffff" stroke="#3182ce" stroke-width="2"/>
+    <text x="750" y="410" font-size="17" font-weight="700" fill="#2a4365">grade 批改</text>
+    <text x="750" y="433" font-size="13" fill="#2c5282">比较答案并统计正确、错误编号</text>
+
+    <rect x="230" y="482" width="280" height="46" rx="7" fill="#edf2f7" stroke="#718096" stroke-width="2"/>
+    <text x="370" y="511" font-size="15" font-weight="700" fill="#2d3748">Exercises.txt / Answers.txt</text>
+
+    <rect x="610" y="482" width="280" height="46" rx="7" fill="#edf2f7" stroke="#718096" stroke-width="2"/>
+    <text x="750" y="511" font-size="15" font-weight="700" fill="#2d3748">Grade.txt</text>
+  </g>
+</svg>
